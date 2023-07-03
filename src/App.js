@@ -1,12 +1,7 @@
 import React from "react";
 import Cardlist from "./Cardlist";
 import Searchbar from "./Searchbar";
-<<<<<<< HEAD
-import {players} from "./players";
-import Scroll from "./Scroll";
-=======
 // import {players} from "./players";
->>>>>>> 9bb45dd6dd7708bffb94653424efe8cd18dc9df0
 
 /*  以下7-15行內容等同於18-51行的基底內容 */
 // const App = () => {
@@ -58,18 +53,6 @@ class App extends React.Component {
 
         console.log("Part render runs.");
 
-<<<<<<< HEAD
-        return (
-            <div className="tc">
-                <h1 className="f1">Hall Of Fame Collection</h1>
-                {/* Searchbar 加上inputchange這個props之後，Searchbar.js就能夠取用 */}
-                <Searchbar inputchange={this.inputChange} />
-                <Scroll>
-                    <Cardlist players = {filteredPlayers} />
-                </Scroll>            
-            </div>
-        );
-=======
         if (this.state.players.length === 0){
             return <h1>Loading...</h1>
         } else {
@@ -82,7 +65,6 @@ class App extends React.Component {
                 </div>
             );
         }
->>>>>>> 9bb45dd6dd7708bffb94653424efe8cd18dc9df0
     }
 }
 
